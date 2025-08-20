@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>02 - CSS Interno (&lt;style&gt;)</title>
+  <style>
+    /* CSS interno dentro del documento HTML */
+    :root {
+      --color-principal: #2c7be5;
+      --gris:#f4f6f8;
+      --texto:#111;
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--texto);
+      background: var(--gris);
+    }
+    header{
+      background: var(--color-principal);
+      color:white; padding:16px 24px;
+    }
+    .destacado{
+      background:white; margin:24px; padding:16px; border-radius:12px;
+      border:1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>CSS interno</h1></header>
+  <section class="destacado">
+    <p>Este estilo vive en la etiqueta <code>&lt;style&gt;</code> del documento.</p>
+    <p>Cambia <code>--color-principal</code> en <code>:root</code> para ver el impacto global.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>04 - Selectores</title>
+  <style>
+    /* Elemento */
+    p { color:#333; }
+    /* Clase */
+    .nota { background:#fff7cc; padding:8px; border-radius:8px; }
+    /* ID */
+    #importante { border-left:4px solid #e53935; padding-left:8px; }
+    /* Descendiente y hijo directo */
+    .panel p { font-size:14px; }
+    .panel > h2 { margin-bottom:8px; }
+    /* Atributo */
+    a[target="_blank"] { border-bottom:2px dashed #2c7be5; }
+    /* Pseudoclase */
+    a:hover { color:#2c7be5; }
+    input:focus { outline:2px solid #2c7be5; }
+    /* Pseudoelemento */
+    .nota::before { content:"💡 "; }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h2>Panel</h2>
+    <p>Texto normal dentro de panel.</p>
+    <p class="nota" id="importante">Esta es una nota importante.</p>
+    <a href="https://example.com" target="_blank">Ir a ejemplo (nueva pestaña)</a>
+  </div>
+  <p>Fuera del panel.</p>
+  <label>Nombre <input placeholder="Enfócame"></label>
+</body>
+</html>

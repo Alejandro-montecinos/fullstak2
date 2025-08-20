@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>11 - Transiciones</title>
+  <style>
+    .btn{
+      display:inline-block;
+      padding:12px 16px; border-radius:10px; border:1px solid #e5e7eb;
+      background:#f8fafc; cursor:pointer;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    }
+    .btn:active{ transform: translateY(0); box-shadow:none; }
+  </style>
+</head>
+<body>
+  <h1>Transiciones</h1>
+  <button class="btn">Pasa el mouse</button>
+</body>
+</html>

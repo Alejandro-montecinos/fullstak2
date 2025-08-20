@@ -1,4 +1,9 @@
+
+body{
+    background-color: rgba(209, 93, 21, 0.749);
+}
+
 h1,h2,p{
     text-align: center;
-
 }
+

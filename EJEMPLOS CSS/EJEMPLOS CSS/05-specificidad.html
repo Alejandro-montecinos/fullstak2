@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>05 - Especificidad</title>
+  <style>
+    /* Menor especificidad (elemento) */
+    button { background:#e0e0e0; color:#111; }
+    /* Clase (más específica) */
+    .primario { background:#2c7be5; color:white; }
+    /* ID (aún más específica) */
+    #btn-enfasis { background:#673ab7; }
+    /* !important (evítalo excepto en casos límite) */
+    .override { background:#ff9800 !important; }
+  </style>
+</head>
+<body>
+  <h1>Prueba de especificidad</h1>
+  <p>Observa cómo cambian los estilos según selector.</p>
+  <button>Botón base</button>
+  <button class="primario">Botón primario (clase)</button>
+  <button class="primario override" id="btn-enfasis">ID + clase + !important</button>
+</body>
+</html>

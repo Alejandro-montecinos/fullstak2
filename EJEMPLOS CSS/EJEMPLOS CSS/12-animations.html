@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>12 - Animaciones (@keyframes)</title>
+  <style>
+    .bola{
+      width:64px; height:64px; border-radius:50%; background:#ff6f61;
+      animation: rebote 1s infinite ease-in-out;
+      margin:40px auto 0;
+    }
+    @keyframes rebote{
+      0%{ transform: translateY(0); }
+      50%{ transform: translateY(-30px); }
+      100%{ transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Animación simple</h1>
+  <div class="bola"></div>
+</body>
+</html>

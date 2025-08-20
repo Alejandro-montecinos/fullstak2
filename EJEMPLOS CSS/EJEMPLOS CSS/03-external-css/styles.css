@@ -1,0 +1,12 @@
+:root{
+  --accent:#58c7f6;
+}
+*{ box-sizing:border-box; }
+body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.topbar{
+  display:flex; gap:16px; align-items:center;
+  background: var(--accent); color:rgb(255, 255, 255); padding:12px 20px;
+}
+.topbar a{ color:white; text-decoration:none; opacity:.9; }
+.topbar a:hover{ opacity:1; text-decoration:underline; }
+.contenedor{ padding:24px; }

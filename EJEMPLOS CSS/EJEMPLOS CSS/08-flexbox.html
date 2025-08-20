@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>08 - Flexbox</title>
+  <style>
+    .contenedor{
+      display:flex;
+      gap:12px;
+      justify-content: space-between; /* prueba: center, space-around, etc. */
+      align-items: center;
+      border:1px solid #e5e7eb; padding:12px; border-radius:10px;
+      flex-wrap: nowrap; /* cámbialo a wrap para reflujo */
+    }
+    .caja{
+      flex:0 0 120px; /* no-grow, no-shrink, base 120px */
+      height:80px; border-radius:10px; background:#e3f2fd; border:1px solid #bbdefb;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .caja.grow{ flex:1 1 0; background:#c8e6c9; border-color:#a5d6a7; }
+  </style>
+</head>
+<body>
+  <h1>Flexbox rápido</h1>
+  <div class="contenedor">
+    <div class="caja">A</div>
+    <div class="caja grow">B (grow)</div>
+    <div class="caja">C</div>
+    <div class="caja">D</div>
+  </div>
+</body>
+</html>

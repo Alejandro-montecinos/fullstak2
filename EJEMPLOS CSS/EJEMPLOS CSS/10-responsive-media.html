@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>10 - Media Queries</title>
+  <style>
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .layout{
+      display:grid;
+      grid-template-columns: 240px 1fr;
+      min-height:100vh;
+    }
+    aside{ background:#0ea5e9; color:white; padding:16px; }
+    main{ padding:16px; }
+    /* Móvil primero: para pantallas pequeñas, columna única */
+    @media (max-width: 768px){
+      .layout{ grid-template-columns: 1fr; }
+      aside{ order:2; }
+      main{ order:1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>Navegación</aside>
+    <main>
+      <h1>Responsive con media queries</h1>
+      <p>Reduce el ancho de la ventana para ver el cambio.</p>
+    </main>
+  </div>
+</body>
+</html>

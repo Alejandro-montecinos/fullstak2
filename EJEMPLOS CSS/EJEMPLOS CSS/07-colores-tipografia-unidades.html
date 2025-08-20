@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>07 - Colores, Tipografía y Unidades</title>
+  <style>
+    :root{ font-size:16px; }
+    body{ margin:24px; font-family: Georgia, 'Times New Roman', serif; color:#222; }
+    h1{ color:hsl(210 80% 45%); }
+    .medidas p{ margin:8px 0; }
+    .px{ font-size:18px; }
+    .rem{ font-size:1.25rem; } /* 1.25 * 16px */
+    .em{ font-size:1.25em; }   /* relativo al padre */
+    .vw{ font-size:3vw; }      /* relativo al ancho de la ventana */
+    .demo-color{
+      padding:12px; border-radius:8px; border:1px solid #e5e7eb;
+      background: linear-gradient(90deg, #ff6f61, #ffd166);
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tipografía y unidades</h1>
+  <div class="medidas">
+    <p class="px">Tamaño en <code>px</code></p>
+    <p class="rem">Tamaño en <code>rem</code> (relativo a raíz)</p>
+    <p class="em">Tamaño en <code>em</code> (relativo al padre)</p>
+    <p class="vw">Tamaño en <code>vw</code> (viewport width)</p>
+  </div>
+  <p class="demo-color">Degradado con HEX y HSL. Cambia los valores.</p>
+</body>
+</html>
