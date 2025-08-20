@@ -1,0 +1,53 @@
+/*Style.css*/
+
+h1{
+    font-family: Calibri ,Arial,sans-serif;     
+    font-size: 38px;
+    color: aliceblue; /*color del h1*/
+    background-color: black; /*color del fondo*/
+}
+
+p{
+    font-family: Calibri ,Arial,sans-serif;     
+    color: rgb(195, 126, 14); /*color del h1*/
+   
+}
+
+#intro{
+    font-family: Calibri ,Arial,sans-serif;   
+    font-size: 24px;  
+    color: rgb(13, 214, 47); /*color del h1*/
+
+}
+
+.producto{
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    background: #0d0d0d;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+/*contenedor de catalogo 2 columnas + centrado*/
+
+#catalogo {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(2,minimax(0,1fr));
+    gap: 16px;
+    align-items: start;
+}
