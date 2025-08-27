@@ -1,0 +1,16 @@
+*****EXTENSIONES PARA VISUAL CODE****
+
+ESLint:
+Ayuda a detectar y corregir errores comunes y problemas de formato, asegurando un estilo de código consistente en el equipo. 
+
+Prettier:
+Un formateador de código que ayuda a mantener un estilo de código uniforme en el proyecto. 
+
+Quokka.js:
+Ejecuta tu código JavaScript y TypeScript a medida que escribes, mostrando los resultados directamente en el editor para una rápida iteración y prueba. 
+
+Live Server:
+Lanza un servidor local para tu sitio con recarga en vivo. Cada vez que guardas los cambios, la página se actualiza automáticamente en el navegador, agilizando el desarrollo. 
+
+Debugger para Chrome:
+Permite depurar código JavaScript directamente en VS Code, utilizando la funcionalidad del navegador Chrome para encontrar y solucionar problemas.
