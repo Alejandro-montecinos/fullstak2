@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var globalVar = 100;
+        function uno() {
+            var local_uno = 1;
+            alert("Global "+globalVar+" local "+local_uno)
+            dos();
+        }
+
+        function dos(){
+            var local_dos = 2;
+            alert("Global "+globalVar+" local "+local_dos)
+        }
+    </script>
+</head>
+<body>
+    <h1>Segundo programa de hoy</h1>
+    <p>Ejemplo muestra variables ambito con alerta</p>
+    <button onclick="uno()">Probar</button>
+    
+</body>
+</html>

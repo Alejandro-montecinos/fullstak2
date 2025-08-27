@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch especie</title>
+    <script>
+
+        function especie(){
+            var tipo = document.getElementById('cespe').value.trim().toLowerCase();
+            switch (tipo) {
+                case "humano": alert("eres un Humano"); break
+                case "humano": alert("eres un Vegetal"); break
+                case "humano": alert("eres un Animal"); break
+                default: alert("Especie Desconocida")
+                    
+                    
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>switch- especie</h1>
+    <label>Especie <input type="text" id="cespe" size="20" onblur="especie()"></label>
+    
+</body>
+</html>

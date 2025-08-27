@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promp introduce nombre</title>
+    <script>
+        function pedirNombre(){
+            var nombre = prompt("porfa introduce tu nombre", "")
+            if(nombre == null || ""){;
+                alert("tiene que ingresar un nombre ")
+            }else{
+                alert("hola "+ nombre)
+            }
+            
+        }
+    </script>
+</head>
+<body>
+     <h1>Tercer programa de hoy</h1>
+    <p>Ejemplo solicita nombre con alerta</p>
+    <button onclick="pedirNombre()">Probar</button>
+    
+</body>
+</html>
